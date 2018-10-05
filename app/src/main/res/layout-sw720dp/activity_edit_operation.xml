@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaime.tfg.ui.teacher.operationsgroup.operation.edit.EditOperationActivity">
+
+    <LinearLayout
+        android:id="@+id/formEditarOperacion"
+        android:layout_width="@dimen/form_600_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtViewEditarOperaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/txtview_editar_operacion"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputEditarOperacionEnunciado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edTxtEditarOperacionEnunciado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_view_operacion" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputEditarOperacionPuntuacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edTxtEditarOperacionPuntuacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edTxt_hint_puntosGruposOperaciones" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEditarOperacionGuardarCambios"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_guardar_perfil" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

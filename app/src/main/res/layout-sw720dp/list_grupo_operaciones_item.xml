@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/txtViewNombreGrupoProblemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:paddingStart="8dp"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/txtViewDificultadGrupoOperacionesE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtViewNombreGrupoProblemas"
+        android:layout_below="@+id/txtViewNombreGrupoProblemas"
+        android:layout_marginTop="32dp"
+        android:paddingStart="8dp"
+        android:text="@string/txtview_dificultad"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewDificultadGrupoOperaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewDificultadGrupoOperacionesE"
+        android:layout_alignBottom="@+id/txtViewDificultadGrupoOperacionesE"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/txtViewDificultadGrupoOperacionesE"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVerOperaciones"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtViewNombreGrupoProblemas"
+        android:layout_below="@+id/txtViewDificultadGrupoOperaciones"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_operations_blue"
+        android:drawablePadding="3dp"
+        android:text="@string/btn_ver_grupo_operaciones" />
+
+    <Button
+        android:id="@+id/btnDisponibilidadGrupoOperaciones"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnVerOperaciones"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnVerOperaciones"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/ic_eye_black_24dp"
+        android:drawableTint="@android:color/holo_green_dark"
+        android:text="@string/btn_disponibilidad"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/btnEditarGrupoOperaciones"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnVerOperaciones"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnDisponibilidadGrupoOperaciones"
+        android:drawableStart="@drawable/ic_edit_black_24dp"
+        android:drawableTint="@android:color/holo_orange_dark"
+        android:text="@string/btn_editar_clase"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <Button
+        android:id="@+id/btnEliminarGrupoOperaciones"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEditarGrupoOperaciones"
+        android:layout_alignBottom="@+id/btnEditarGrupoOperaciones"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnEditarGrupoOperaciones"
+        android:drawableStart="@drawable/ic_delete_black_24dp"
+        android:drawableTint="@android:color/holo_red_dark"
+        android:text="@string/btn_eliminar_clase"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.teacher.profile.ShowTeacherProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/mostrarPerfilProfesorContainer"
+        android:layout_width="@dimen/form_720_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nombreContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/txtview_perfil_nombre"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilNombre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/apellidosContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/txtview_perfil_apellidos"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilApellidos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/correoElectronicoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtview_perfil_correoElectronico"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:id="@+id/txtViewPerfilCorreo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fActionButtonEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:tint="@android:color/background_light"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+</FrameLayout>

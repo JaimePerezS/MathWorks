@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.main.fragment.LoginStudentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondo" />
+
+    <LinearLayout
+        android:id="@+id/formAlumnos"
+        android:layout_width="@dimen/form_600_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        android:elevation="2dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtViewAlumnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txtview_inicio_sesion"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+        <LinearLayout
+            android:id="@+id/containerIdentificador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputIdentificador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtIdentificador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_student_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_identificador" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/btn_entrar" />
+
+    </LinearLayout>
+
+</FrameLayout>

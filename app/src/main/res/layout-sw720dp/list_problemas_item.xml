@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewEnunciado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/txtview_mostrar_enunciado_problema"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewMostrarEnunciado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtViewEnunciado"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/btnEditarProblema"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewOperacionE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtViewEnunciado"
+            android:layout_below="@+id/txtViewEnunciado"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/txt_view_operacion"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewMostrarOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/txtViewMostrarEnunciado"
+            android:layout_alignTop="@+id/txtViewOperacionE"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="35dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewPuntosE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtViewEnunciado"
+            android:layout_below="@+id/txtViewEnunciado"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/txt_view_puntos"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewPuntos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/txtViewMostrarEnunciado"
+            android:layout_alignTop="@+id/txtViewOperacionE"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="35dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewTipoOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtViewEnunciado"
+            android:layout_below="@+id/txtViewEnunciado"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/txtview_tipo_operacion"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewMostrarTipoOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/txtViewMostrarEnunciado"
+            android:layout_alignTop="@+id/txtViewOperacionE"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="35dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnEditarProblema"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_edit_black_24dp"
+            android:drawableTint="@android:color/holo_orange_dark"
+            android:text="@string/btn_editar_problema"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/btnEliminarProblema"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/btnEditarProblema"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_delete_black_24dp"
+            android:drawableTint="@android:color/holo_red_dark"
+            android:text="@string/btn_eliminar_problema"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">MathWorks</string>
+
+    <!-- Bottom NavBar -->
+    <string name="title_alumnos">Alumnos</string>
+    <string name="title_profesores">Profesores</string>
+    <string name="title_registro">Registro</string>
+
+    <!-- Login Profesores -->
+    <string name="edtxt_hint_correo">Correo Electrónico</string>
+    <string name="edtxt_hint_contraseña">Contraseña</string>
+    <string name="btn_entrar">Entrar</string>
+
+    <!-- Login Alumnos -->
+    <string name="edtxt_hint_identificador">Identificador</string>
+    <string name="txtview_inicio_sesion">Iniciar Sesión</string>
+
+    <!-- Registro Profesores -->
+    <string name="edtxt_hint_nombre">Nombre</string>
+    <string name="edtxt_hint_apellido">Apellidos</string>
+    <string name="edtxt_hint_repetir_contraseña">Repetir contraseña</string>
+    <string name="btn_registrar">Registrarse</string>
+    <string name="txtview_registro">Registro</string>
+
+    <!-- Recuperar Credenciales -->
+    <string name="txtview_recuperar">Recuperar Credenciales</string>
+    <string name="edtxt_hint_recuperar">Correo Electronico</string>
+    <string name="edtxt_error_recuperar">Introduce un correo electronico</string>
+
+    <!-- Mi Perfil -->
+    <string name="txtview_perfil_nombre">Nombre:</string>
+    <string name="txtview_perfil_apellidos">Apellidos:</string>
+    <string name="txtview_perfil_correoElectronico">Correo Electrónico:</string>
+
+    <!-- Item Clase -->
+    <string name="btn_ver_alumnos">Alumnos</string>
+    <string name="btn_editar_clase">Editar</string>
+    <string name="btn_eliminar_clase">Eliminar</string>
+
+    <!-- Item Grupo Problemas -->
+    <string name="btn_ver_grupo_problemas">Problemas</string>
+    <string name="btn_disponibilidad">Disponibilidad</string>
+
+    <!-- Item Grupo Operaciones -->
+    <string name="btn_ver_grupo_operaciones">Operaciones</string>
+
+    <!-- Item Alumno -->
+    <string name="btn_ver_estadisticas_alumno">Progresos</string>
+
+    <!-- Item Clase Disponibilidad -->
+    <string name="btn_disponible_todos">Para todos</string>
+    <string name="btn_disponible_nadie">Para nadie</string>
+
+    <!-- Item Alumno Disponibilidad -->
+    <string name="switch_on_disponible">Disponible </string>
+    <string name="switch_off_disponible">No Disponible</string>
+
+    <!-- Editar Perfil -->
+    <string name="txtview_editar_perfil">Editar Perfil</string>
+    <string name="edtxt_hint_editar_nombre">Editar Nombre</string>
+    <string name="edtxt_hint_editar_apellidos">Editar Apellidos</string>
+    <string name="edtxt_hint_editar_correo">Editar Correo</string>
+    <string name="btn_guardar_perfil">Guardar Cambios</string>
+
+    <!-- Editar Alumno -->
+    <string name="txtview_editar_alumno">Editar Alumno</string>
+
+    <!-- Editar Clase -->
+    <string name="txtview_editar_clase">Editar Clase</string>
+    <string name="edtxt_hint_editar_nombre_clase">Nombre de la Clase</string>
+
+
+    <!-- Insertar Clase -->
+    <string name="txtview_crear_clase">Crear Clase</string>
+    <string name="edtxt_hint_crear_nombre_clase">Introduce un nombre</string>
+    <string name="btn_crear_clase">Crear Clase</string>
+
+    <!-- Insertar Alumno -->
+    <string name="txtview_añadir_alumno">Añadir Alumno</string>
+
+    <string name="btn_añadir_alumno">Añadir Alumno</string>
+
+    <!-- Insertar Grupo Problemas -->
+    <string name="txtview_crear_grupo_problemas">Crear Grupo de Problemas</string>
+    <string name="edtxt_hint_insertar_grupo_problemas">Introduce un nombre</string>
+    <string-array name="sp_dificultad">
+        <item>Fácil</item>
+        <item>Medio</item>
+        <item>Difícil</item>
+    </string-array>
+
+    <!-- Insertar Grupo Operaciones -->
+    <string name="txtview_crear_grupo_operaciones">Crear Grupo de Operaciones</string>
+
+    <!-- InserProblemlema -->
+
+    <string name="txtview_insertar_enunciado_problema">Enunciado</string>
+    <string name="txtview_insertar_solucion">Solucion</string>
+    <string name="txtview_insertar_error1">Error 1</string>
+    <string name="txtview_insertar_error2">Error 2</string>
+    <string name="txtview_insertar_error3">Error 3</string>
+    <string name="btn_insertar_problema">Añadir Problema</string>
+
+    <!-- EditarProblema -->
+    <string name="txtview_editar_problema">Editar Problema</string>
+
+    <!-- InserOperationcion -->
+
+    <string name="btn_insertar_operacion">Añadir Operacion</string>
+
+    <!-- EditarOperacion -->
+    <string name="txtview_editar_operacion">Editar Operación</string>
+
+
+    <!-- Editar Grupo Problemas -->
+    <string name="txtview_editar_grupo_problemas">Editar Grupo de Problemas</string>
+    <string name="edtxt_hint_editar_nombre_grupo_problemas">Nombre del grupo</string>
+    <string name="txtview_dificultad_grupo_problemas">Dificultad:</string>
+
+    <!-- Editar Grupo Operaciones -->
+    <string name="txtview_editar_grupo_operaciones">Editar Grupo de Operaciones</string>
+    <string name="edtxt_hint_editar_nombre_grupo_operaciones">Nombre del grupo</string>
+
+    <!-- MostProblemlema -->
+    <string name="txtview_mostrar_enunciado_problema">Enunciado:</string>
+    <string name="txtview_mostrar_solucion">Solucion:</string>
+    <string name="txtview_mostrar_error1">Error 1:</string>
+    <string name="txtview_mostrar_error2">Error 2:</string>
+    <string name="txtview_mostrar_error3">Error 3:</string>
+    <string name="btn_editar_problema">Editar</string>
+    <string name="btn_eliminar_problema">Eliminar</string>
+
+    <!-- Main Teacher Fragment -->
+
+    <string name="btn_clases">Clases</string>
+    <string name="btn_grupos_operaciones">Grupos de Operaciones</string>
+    <string name="btn_grupos_problemas">Grupos de Problemas</string>
+    <string name="btn_pefil">Mi Perfil</string>
+    <string name="btn_cambiar_contrasena">Cambiar contraseña</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="title_activity_profesor_principal">ProfesorPrincipalActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_grupo_operaciones">Grupos de Operaciones</string>
+    <string name="menu_grupo_problemas">Grupos de Problemas</string>
+
+    <string name="btn_guardar_avatar">Listo</string>
+    <string name="seleccionar_avatar">Elige tu avatar:</string>
+
+
+    <string name="txtview_dificultad">Dificultad:</string>
+
+    <string name="txtview_tipo_operacion">Tipo de operación a resolver:</string>
+    <string name="txtview_tipo_op">Tipo de operación:</string>
+
+    <string-array name="sp_tipoOperacion">
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+    </string-array>
+
+    <!-- AlertDialog -->
+    <string name="alertDialog_si">SI</string>
+    <string name="alertDialog_no">NO</string>
+
+    <string name="alertDialog_editar_clase">Editar Clase</string>
+    <string name="alertDialog_añadir_clase">Añadir Clase</string>
+
+    <string name="alertDialog_confirmar_cambios_clase">Confirmar guardar cambios</string>
+    <string name="alertDialog_confirmar_crear_clase">Confirmar creación de la clase</string>
+    <string name="alertDialog_confirmar_eliminar_clase">Confirmar eliminación</string>
+
+    <string name="alertDialog_guardar_cambios_clase">¿Está seguro de que quiere guardar los cambios en esta clase?</string>
+    <string name="alertDialog_crear_nueva_clase">¿Está seguro de que quiere crear la clase</string>
+    <string name="alertDialog_eliminar_clase">¿Está seguro de que desea eliminar la clase</string>
+
+    <!-- Main Students Activity -->
+    <string name="btn_hacer_operaciones">Hacer Operaciones</string>
+    <string name="btn_hacer_problemas">Hacer Problemas</string>
+    <string name="btn_salir">Salir</string>
+    <string name="btn_atras">Volver</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="txtviewPuntuacion">Puntuación:</string>
+    <string name="btn_tienda">Tienda</string>
+    <string name="btn_comprar">Comprar</string>
+    <string name="txt_view_coste">Coste:</string>
+    <string name="btn_cambiar_avatar">Cambiar Avatar</string>
+    <string name="edTxt_hint_puntosGruposOperaciones">Puntos</string>
+    <string name="txt_view_puntos">Puntos:</string>
+    <string name="btn_sumar">Sumar</string>
+    <string name="btn_restar">Restar</string>
+    <string name="btn_multiplicar">Multiplicar</string>
+    <string name="btn_dividir">Dividir</string>
+    <string name="txt_view_elige_operacion">¿Qué tipo de operación debes hacer?</string>
+    <string name="txt_view_ayuda">Ayuda</string>
+    <string name="txt_view_operacion">Operación</string>
+    <string name="btn_comprobar">Comprobar</string>
+    <string name="btn_ayuda">Ayuda</string>
+    <string name="btn_volver">Volver</string>
+    <string name="btn_ocultar">Ocultar</string>
+    <string name="btn_hacer_visible">Hacer grupo visible</string>
+    <string name="txt_view_progresos">Ver Progresos</string>
+    <string name="btn_ver_progresos_grupo_operacioens">Operaciones Realizadas</string>
+    <string name="btn_ver_progresos_grupo_problemas">Problemas Realizados</string>
+    <string name="txtViewOperacionE">Operación:</string>
+    <string name="txtview_erroresE">Errores:</string>
+    <string name="btn_progresos">Progresos</string>
+    <string name="txt_view_puntos_obtenidos">Puntos Obtenidos:</string>
+    <string name="txt_view_error_identificar">Errores al identificar la operación:</string>
+    <string name="txt_view_error_operacion">Errores al resolver la operación:</string>
+    <string name="txt_view_progreso_operaciones" />
+    <string name="txt_view_progreso_operacioness">Progreso Operaciones</string>
+    <string name="btn_ver_progresos_problemas">Progresos Problemas</string>
+    <string name="title_activity_show_problems_group_teacher_progress">
+        ShowProblemsGroupTeacherProgressActivity
+    </string>
+
+
+</resources>

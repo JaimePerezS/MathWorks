@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.fragment.SignInFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:alpha="0.5"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/formRegistro"
+            android:layout_width="@dimen/form_720_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtViewRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txtview_registro"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="35"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_nombre"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputApellido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="70"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_apellido"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="60"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_correo"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputContraseña1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtContraseña1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_contraseña"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputContraseña2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/edTxtContraseña2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/edtxt_hint_repetir_contraseña"
+                    android:inputType="textPassword"
+                    android:password="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/btn_registrar" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

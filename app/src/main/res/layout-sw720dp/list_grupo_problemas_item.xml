@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/txtViewNombreGrupoProblemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/txtViewDificultadGrupoProblemasE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtViewNombreGrupoProblemas"
+        android:layout_below="@+id/txtViewNombreGrupoProblemas"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:paddingStart="10dp"
+        android:text="@string/txtview_dificultad"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewDificultadGrupoProblemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewDificultadGrupoProblemasE"
+        android:layout_alignBottom="@+id/txtViewDificultadGrupoProblemasE"
+        android:layout_toEndOf="@+id/txtViewDificultadGrupoProblemasE"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVerProblemas"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewDificultadGrupoProblemas"
+        android:layout_marginTop="32dp"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/ic_problems_group"
+        android:drawableTint="@color/colorAccent"
+        android:text="@string/btn_ver_grupo_problemas" />
+
+    <Button
+        android:id="@+id/btnDisponibilidadGrupoProblemas"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnVerProblemas"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnVerProblemas"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/ic_eye_black_24dp"
+        android:drawableTint="@android:color/holo_green_dark"
+        android:text="@string/btn_disponibilidad"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/btnEditarGrupoProblemas"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDisponibilidadGrupoProblemas"
+        android:layout_alignBottom="@+id/btnDisponibilidadGrupoProblemas"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnDisponibilidadGrupoProblemas"
+        android:drawableStart="@drawable/ic_edit_black_24dp"
+        android:drawableTint="@android:color/holo_orange_dark"
+        android:text="@string/btn_editar_clase"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <Button
+        android:id="@+id/btnEliminarGrupoProblemas"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEditarGrupoProblemas"
+        android:layout_alignBottom="@+id/btnEditarGrupoProblemas"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnEditarGrupoProblemas"
+        android:drawableStart="@drawable/ic_delete_black_24dp"
+        android:drawableTint="@android:color/holo_red_dark"
+        android:text="@string/btn_eliminar_clase"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

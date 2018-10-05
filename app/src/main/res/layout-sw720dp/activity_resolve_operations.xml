@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaime.tfg.ui.student.operationsGroup.resolveOperations.ResolveOperationsActivity">
+
+    <Button
+        android:id="@+id/btnComprobar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/btn_comprobar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorComplementary"
+        android:text="@string/btn_salir"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fondo" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/izqLayout"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:background="@android:color/background_light"
+        android:elevation="2dp"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/multLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtViewOperacionMult1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
+                android:letterSpacing="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/separatorMult"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtViewOperacionMult2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
+                android:letterSpacing="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/separatorMult"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewOperacionMult1" />
+
+            <TextView
+                android:id="@+id/txtViewOperadorMult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="end"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewOperacionMult2"
+                app:layout_constraintEnd_toStartOf="@+id/txtViewOperacionMult2" />
+
+            <TextView
+                android:id="@+id/txtViewOperadorMult2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="end"
+                android:letterSpacing="1"
+                android:text="+"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout2" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/separatorMult"
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_orange_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewOperacionMult2">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult11"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult12"
+                app:layout_constraintTop_toBottomOf="@+id/separatorMult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult12"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult13"
+                app:layout_constraintTop_toTopOf="@+id/edTxtResultadoMult13" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult13"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult14"
+                app:layout_constraintTop_toBottomOf="@+id/separatorMult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult14"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult15"
+                app:layout_constraintTop_toBottomOf="@+id/separatorMult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult15"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/separatorMult"
+                app:layout_constraintTop_toBottomOf="@+id/separatorMult" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult15"
+                app:layout_constraintTop_toBottomOf="@+id/edTxtResultadoMult13">
+
+                <EditText
+                    android:id="@+id/edTxtResultadoMult21"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edtxt"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult22"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edTxtResultadoMult22"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edtxt"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult23"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edTxtResultadoMult23"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edtxt"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult24"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edTxtResultadoMult24"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edtxt"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult25"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edTxtResultadoMult25"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edtxt"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult31"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult32"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult32"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult33"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult33"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult34"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult34"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult35"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult35"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultadoMult36"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <EditText
+                android:id="@+id/edTxtResultadoMult36"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edTxtResultadoMult15"
+                app:layout_constraintTop_toBottomOf="@+id/separator2Mult" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/separator2Mult"
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_orange_light"
+                app:layout_constraintEnd_toEndOf="@+id/separatorMult"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/sumResLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtViewOperacionE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="end"
+                android:letterSpacing="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/separator"
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_orange_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewOperacionE">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtViewOperador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtViewOperacionE"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edTxtResultado1"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultado3"
+                app:layout_constraintTop_toTopOf="@+id/separator" />
+
+            <EditText
+                android:id="@+id/edTxtResultado2"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultado4"
+                app:layout_constraintTop_toTopOf="@+id/separator" />
+
+            <EditText
+                android:id="@+id/edTxtResultado4"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edTxtResultado5"
+                app:layout_constraintTop_toTopOf="@+id/separator" />
+
+            <EditText
+                android:id="@+id/edTxtResultado5"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edtxt"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/separator"
+                app:layout_constraintTop_toTopOf="@+id/separator" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <GridLayout
+        android:id="@+id/tecladoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alignmentMode="alignBounds"
+        android:background="@color/colorPrimaryDark"
+        android:columnCount="3"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/izqLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/numero_1"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="1"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_2"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="2"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_3"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:text="3"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_4"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="4"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_5"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="5"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_6"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="6"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_7"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="7"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_8"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="8"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_9"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="9"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/numero_0"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:text="0"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/borrar"
+            style="@style/AppTheme.BotonNumero.Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:text="Borrar"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

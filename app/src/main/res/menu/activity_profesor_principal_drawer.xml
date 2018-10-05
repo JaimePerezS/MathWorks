@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clases"
+            android:icon="@drawable/ic_classroom"
+            android:title="Clases" />
+        <item
+            android:id="@+id/nav_operaciones"
+            android:icon="@drawable/ic_operations_black"
+            android:title="@string/menu_grupo_operaciones" />
+        <item
+            android:id="@+id/nav_problemas"
+            android:icon="@drawable/ic_problems_group"
+            android:title="@string/menu_grupo_problemas" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/btn_pefil" />
+        <item
+            android:id="@+id/nav_cerrar"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/btn_cerrar_sesion" />
+    </group>
+
+</menu>

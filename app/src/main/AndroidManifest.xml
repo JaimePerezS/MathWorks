@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jaime.tfg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens android:requiresSmallestWidthDp="600" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".ui.main.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.teacher.MainTeacherActivity"
+            android:label="@string/title_activity_profesor_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.teacher.profile.edit.EditTeacherProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.classroom.insert.InsertClassroomActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.problemsgroup.insert.InsertProblemsGroupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.operationsgroup.insert.InsertOperationsGroupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.teacher.classroom.student.ShowStudentsActivity" />
+        <activity
+            android:name=".ui.teacher.classroom.student.insert.InsertStudentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.operationsgroup.edit.EditOperationsGroupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.teacher.operationsgroup.operation.ShowOperationsActivity" />
+        <activity android:name=".ui.teacher.problemsgroup.problem.ShowProblemsActivity" />
+        <activity
+            android:name=".ui.teacher.classroom.edit.EditClassroomActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.problemsgroup.problem.insert.InsertProblemActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.operationsgroup.operation.insert.InsertOperationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.classroom.student.edit.EditStudentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.problemsgroup.edit.EditProblemsGroupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.operationsgroup.operation.edit.EditOperationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.teacher.problemsgroup.problem.edit.EditProblemActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.student.firstAvatarSelection.FirstSelectAvatarActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.student.MainStudentActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.student.operationsGroup.SelectOperationsGroupActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.student.problemsGroup.SelectProblemsGroupActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.student.operationsGroup.resolveOperations.ResolveOperationsActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.student.shop.AvatarShopActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.teacher.operationsgroup.availability.OperationGroupAvailabilityActivity" />
+        <activity android:name=".ui.teacher.problemsgroup.availability.ProblemsGroupAvailabilityActivity" />
+        <activity
+            android:name=".ui.student.selectAvatar.SelectAvatarActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.student.problemsGroup.resolveProblems.ResolveProblemsActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.teacher.operationsgroup.availability.addstudents.ShowStudentNoAttachedOperationsGroupActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.teacher.problemsgroup.availability.addStudents.ShowStudentNoAttachedProblemsGroupActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.student.record.ChooseRecordActivity" />
+        <activity android:name=".ui.student.record.operationsGroup.OperationsGroupRecordActivity" />
+        <activity android:name=".ui.student.record.problemsGroup.ProblemsGroupRecordActivity" />
+        <activity android:name=".ui.teacher.classroom.student.progress.operationsGroup.ShowOperationsGroupStudentProgressActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.teacher.classroom.student.progress.problemsGroup.ShowProblemsGroupProgressActivity"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>
